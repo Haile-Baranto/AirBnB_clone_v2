@@ -4,6 +4,7 @@
 from fabric.api import local
 from datetime import datetime
 
+
 def do_pack():
     """Create a .tgz archive from the web_static folder"""
     # Create the versions folder if it doesn't exist
