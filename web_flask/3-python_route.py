@@ -35,7 +35,7 @@ def display_python_value(text='is cool'):
     (replace underscore _ symbols with a space )
     The default value of text is “is cool”'''
     text_with_spaces = text.replace('_', ' ')
-    return f'python {text_with_spaces}'
+    return f'Python {text_with_spaces}'
 
 
 if __name__ == "__main__":
