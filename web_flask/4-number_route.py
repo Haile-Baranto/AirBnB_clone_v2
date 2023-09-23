@@ -42,7 +42,7 @@ def display_python_value(text='is cool'):
 def check_integer(n):
     '''display “n is a number” only if n is an integer'''
     if isinstance(n, int):
-        return f'{n} is number'
+        return f'{n} is a number'
     else:
         return 404
 
