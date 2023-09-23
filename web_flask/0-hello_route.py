@@ -1,16 +1,17 @@
 #!/usr/bin/python3
+'''The script starts flask web appliation'''
 from flask import Flask
-"""The script starts flask web appliation"""
 
-app = Flask(__name__)  # create an instance of flask app.
+app = Flask(__name__)
+'''Flask applicarion instance'''
 app.url_map.strict_slashes = False
 
 
 @app.route('/')
 def index():
-    """Returns 'Hello HBNB!' when the / route is acceesed."""
+    '''Returns "Hello HBNB!" when the / route is requested.'''
     return 'Hello HBNB!'
 
 
 if __name__ == "__main__":
-    app.run(host='0.0.0.0', port=5000)
+    app.run(host='0.0.0.0', port='5000')
