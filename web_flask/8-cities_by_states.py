@@ -8,7 +8,7 @@ from models import storage
 from models.state import State
 from models.city import City
 
-app = Flask(__name__)
+app = Flask(__name__, template_folder='templates')
 
 
 @app.teardown_appcontext
